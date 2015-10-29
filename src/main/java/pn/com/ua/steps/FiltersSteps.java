@@ -55,7 +55,7 @@ public class FiltersSteps extends ScenarioSteps {
 
   @Step
   public void selectManufacturer(String manufacturer) {
-    pnGoodsPage.selectFilter(manufacturer);
+    pnGoodsPage.selectProducer(manufacturer);
   }
 
   @Step

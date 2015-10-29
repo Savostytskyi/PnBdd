@@ -36,6 +36,14 @@ public class PnGoodsPage extends PageObject {
     find(By.xpath(String.format(FILTER_BY_VALUE, filterValue))).click();
   }
 
+  public int selectProducer(String producer){
+    String amount = find(By.xpath("//a[text()='" + producer + "']/following-sibling::i[1]")).getText();
+    amount = amount.replaceAll("[()]", "").replace(" ","");
+    int productNumber = Integer.valueOf(amount);
+    find(By.xpath("//a[contains(@href, '?fo') and text()='"+producer+"']")).click();
+    return productNumber;
+  }
+
   public List<Integer> getListOfPrices() {
     List<Integer> values = new ArrayList<Integer>();
     List<WebElementFacade> prices = findAll(GOODS_PRICES);
