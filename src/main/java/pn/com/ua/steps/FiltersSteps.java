@@ -60,6 +60,7 @@ public class FiltersSteps extends ScenarioSteps {
 
   @Step
   public void checkProductCount() {
+    productCount = pnGoodsPage.getResultCount();
     assertThat(pnGoodsPage.getResultCount(), equalTo(productCount));
   }
 

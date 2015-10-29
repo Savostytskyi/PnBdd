@@ -74,9 +74,9 @@ public class CheckPnFilters {
     filtersSteps.searchProduct();
   }
 
-  @Then("search result amount equals to 1")
-  public void thenSearchResultAmountEqualsTo1() {
-    filtersSteps.checkProductCount();
+  @Then("search result amount equals to $count")
+  public void thenSearchResultAmountEqualsTo1(int count) {
+    filtersSteps.verifyProductAmount(count);
   }
 
   @Then("search result name is equal to product name")
