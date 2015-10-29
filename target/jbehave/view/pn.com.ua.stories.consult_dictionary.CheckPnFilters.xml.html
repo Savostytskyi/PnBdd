@@ -1,0 +1,172 @@
+<html>
+<head>
+<title>pn.com.ua.stories.consult_dictionary.CheckPnFilters</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+<story path="pn/com/ua/stories/consult_dictionary/CheckPnFilters.story" title="">
+<scenario keyword="Scenario:" title="Check the filter by price">
+<step outcome="successful">Given site pn.com.ua opened</step>
+<step outcome="failed" keyword="FAILED">When I select category <parameter>&apos;&#1050;&#1086;&#1084;&#1087;&#1100;&#1102;&#1090;&#1077;&#1088;&#1099;&apos;</parameter><failure>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for presence of element located by: By.selector: //a[text()=&apos;&apos;&#1050;&#1086;&#1084;&#1087;&#1100;&#1102;&#1090;&#1077;&#1088;&#1099;&apos;&apos;]
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;EPUAKHAW0133&apos;, ip: &apos;10.23.11.59&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: net.thucydides.core.webdriver.WebDriverFacade</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And I select subcategory <parameter>&apos;&#1052;&#1086;&#1085;&#1080;&#1090;&#1086;&#1088;&#1099;&apos;</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And I select minimal price <parameter>&apos;6000&apos;</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And I select maximal price <parameter>&apos;7000&apos;</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then search result prices is between &apos;6000&apos; and &apos;7000&apos;</step>
+<failure>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for presence of element located by: By.selector: //a[text()=&apos;&apos;&#1050;&#1086;&#1084;&#1087;&#1100;&#1102;&#1090;&#1077;&#1088;&#1099;&apos;&apos;]
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;EPUAKHAW0133&apos;, ip: &apos;10.23.11.59&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: net.thucydides.core.webdriver.WebDriverFacade
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at net.thucydides.core.pages.RenderedPageObjectView.waitForPresenceOf(RenderedPageObjectView.java:91)
+	at net.thucydides.core.pages.PageObject.waitForRenderedElementsToBePresent(PageObject.java:231)
+	at net.thucydides.core.pages.PageObject.waitForPresenceOf(PageObject.java:237)
+	at pn.com.ua.pages.PnHomePage.selectCategory(PnHomePage.java:31)
+	at pn.com.ua.steps.FiltersSteps.selectCategory(FiltersSteps.java:31)
+	at pn.com.ua.steps.FiltersSteps$$EnhancerByCGLIB$$93633bfa.CGLIB$selectCategory$11(&lt;generated&gt;)
+	at pn.com.ua.steps.FiltersSteps$$EnhancerByCGLIB$$93633bfa$$FastClassByCGLIB$$96dddcaf.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:300)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:285)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:261)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:125)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:51)
+	at pn.com.ua.steps.FiltersSteps$$EnhancerByCGLIB$$93633bfa.selectCategory(&lt;generated&gt;)
+	at pn.com.ua.jbehave.CheckPnFilters.whenISelectSomeCategory(CheckPnFilters.java:24)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:595)
+	at org.jbehave.core.embedder.StoryRunner$FineSoFar.run(StoryRunner.java:535)
+...</failure>
+</scenario>
+<scenario keyword="Scenario:" title="Check the filter by name of the manufacturer">
+<step outcome="successful">Given site pn.com.ua opened</step>
+<step outcome="failed" keyword="FAILED">When I select category <parameter>&apos;&#1050;&#1086;&#1084;&#1087;&#1100;&#1102;&#1090;&#1077;&#1088;&#1099;&apos;</parameter><failure>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for presence of element located by: By.selector: //a[text()=&apos;&apos;&#1050;&#1086;&#1084;&#1087;&#1100;&#1102;&#1090;&#1077;&#1088;&#1099;&apos;&apos;]
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;EPUAKHAW0133&apos;, ip: &apos;10.23.11.59&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: net.thucydides.core.webdriver.WebDriverFacade</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And I select subcategory <parameter>&apos;&#1052;&#1086;&#1085;&#1080;&#1090;&#1086;&#1088;&#1099;&apos;</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And I select manufacturer <parameter>&apos;Acer&apos;</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then search result amount is equal to number beside manufacturer</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And search result names start with selected manufacturer <parameter>&apos;Acer&apos;</parameter></step>
+<failure>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for presence of element located by: By.selector: //a[text()=&apos;&apos;&#1050;&#1086;&#1084;&#1087;&#1100;&#1102;&#1090;&#1077;&#1088;&#1099;&apos;&apos;]
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;EPUAKHAW0133&apos;, ip: &apos;10.23.11.59&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: net.thucydides.core.webdriver.WebDriverFacade
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at net.thucydides.core.pages.RenderedPageObjectView.waitForPresenceOf(RenderedPageObjectView.java:91)
+	at net.thucydides.core.pages.PageObject.waitForRenderedElementsToBePresent(PageObject.java:231)
+	at net.thucydides.core.pages.PageObject.waitForPresenceOf(PageObject.java:237)
+	at pn.com.ua.pages.PnHomePage.selectCategory(PnHomePage.java:31)
+	at pn.com.ua.steps.FiltersSteps.selectCategory(FiltersSteps.java:31)
+	at pn.com.ua.steps.FiltersSteps$$EnhancerByCGLIB$$93633bfa.CGLIB$selectCategory$11(&lt;generated&gt;)
+	at pn.com.ua.steps.FiltersSteps$$EnhancerByCGLIB$$93633bfa$$FastClassByCGLIB$$96dddcaf.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:300)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:285)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:261)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:125)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:51)
+	at pn.com.ua.steps.FiltersSteps$$EnhancerByCGLIB$$93633bfa.selectCategory(&lt;generated&gt;)
+	at pn.com.ua.jbehave.CheckPnFilters.whenISelectSomeCategory(CheckPnFilters.java:24)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:595)
+	at org.jbehave.core.embedder.StoryRunner$FineSoFar.run(StoryRunner.java:535)
+...</failure>
+</scenario>
+<scenario keyword="Scenario:" title="Check the product name search">
+<step outcome="failed" keyword="FAILED">Given site pn.com.ua opened<failure>org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;
+System info: host: &apos;EPUAKHAW0133&apos;, ip: &apos;10.23.11.59&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{enablePersistentHover=true, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, elementScrollBehavior=0, allowAsynchronousJavaScript=false, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: f173a7ce-f865-43a7-a529-d73b643c2623
+Command duration or timeout: 756 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;EPUAKHAW0133&apos;, ip: &apos;10.23.11.59&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_79&apos;
+Session ID: 832a1492-8454-4bcf-913a-ecd88de178b4
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, enablePersistentHover=true, ignoreZoomSetting=false, enableElementCacheCleanup=true, browserName=internet explorer, unexpectedAlertBehaviour=dismiss, webdriver.remote.sessionid=832a1492-8454-4bcf-913a-ecd88de178b4, version=11, cssSelectorsEnabled=true, ignoreProtectedModeSettings=false, requireWindowFocus=false, allowAsynchronousJavaScript=false, initialBrowserUrl=, handlesAlerts=true, nativeEvents=true, takesScreenshot=true}]</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When I select category <parameter>&apos;&#1050;&#1086;&#1084;&#1087;&#1100;&#1102;&#1090;&#1077;&#1088;&#1099;&apos;</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And I select subcategory <parameter>&apos;&#1052;&#1086;&#1085;&#1080;&#1090;&#1086;&#1088;&#1099;&apos;</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And I sort products by price</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And I choose the first product in result</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And I type product name to search</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then search result amount equals to 1</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And search result name is equal to product name</step>
+<failure>org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;
+System info: host: &apos;EPUAKHAW0133&apos;, ip: &apos;10.23.11.59&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{enablePersistentHover=true, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, elementScrollBehavior=0, allowAsynchronousJavaScript=false, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: f173a7ce-f865-43a7-a529-d73b643c2623
+Command duration or timeout: 756 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;EPUAKHAW0133&apos;, ip: &apos;10.23.11.59&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_79&apos;
+Session ID: 832a1492-8454-4bcf-913a-ecd88de178b4
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, enablePersistentHover=true, ignoreZoomSetting=false, enableElementCacheCleanup=true, browserName=internet explorer, unexpectedAlertBehaviour=dismiss, webdriver.remote.sessionid=832a1492-8454-4bcf-913a-ecd88de178b4, version=11, cssSelectorsEnabled=true, ignoreProtectedModeSettings=false, requireWindowFocus=false, allowAsynchronousJavaScript=false, initialBrowserUrl=, handlesAlerts=true, nativeEvents=true, takesScreenshot=true}]
+	(reflection-construct)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	(reflection-invoke)
+	at org.openqa.selenium.remote.Augmenter$CompoundHandler.intercept(Augmenter.java:191)
+	at org.openqa.selenium.remote.RemoteWebDriver$$EnhancerByCGLIB$$c0eb70c0.get(&lt;generated&gt;)
+	at net.thucydides.core.webdriver.WebDriverFacade.openIgnoringHtmlUnitScriptErrors(WebDriverFacade.java:123)
+	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:118)
+	at net.thucydides.core.pages.PageObject.openPageAtUrl(PageObject.java:733)
+	at net.thucydides.core.pages.PageObject.open(PageObject.java:643)
+	at net.thucydides.core.pages.PageObject.open(PageObject.java:631)
+	at pn.com.ua.steps.FiltersSteps.openPnHomePage(FiltersSteps.java:26)
+	at pn.com.ua.steps.FiltersSteps$$EnhancerByCGLIB$$93633bfa.CGLIB$openPnHomePage$5(&lt;generated&gt;)
+	at pn.com.ua.steps.FiltersSteps$$EnhancerByCGLIB$$93633bfa$$FastClassByCGLIB$$96dddcaf.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:300)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:285)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:261)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:125)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:51)
+	at pn.com.ua.steps.FiltersSteps$$EnhancerByCGLIB$$93633bfa.openPnHomePage(&lt;generated&gt;)
+	at pn.com.ua.jbehave.CheckPnFilters.givenSitePncomuaOpened(CheckPnFilters.java:19)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:595)
+	at org.jbehave.core.embedder.StoryRunner$FineSoFar.run(StoryRunner.java:535)
+...</failure>
+</scenario>
+</story>
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

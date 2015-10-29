@@ -1,0 +1,7 @@
+<story path="pn/com/ua/stories/consult_dictionary/CheckPnFilters.story" title="">
+<scenario keyword="Scenario:" title="Check the filter by price">
+<step outcome="successful">Given site pn.com.ua opened</step>
+<step outcome="failed" keyword="FAILED">When I select category <parameter>&apos;&#1050;&#1086;&#1084;&#1087;&#1100;&#1102;&#1090;&#1077;&#1088;&#1099;&apos;</parameter><failure>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for presence of element located by: By.selector: //a[text()=&apos;&apos;&#1050;&#1086;&#1084;&#1087;&#1100;&#1102;&#1090;&#1077;&#1088;&#1099;&apos;&apos;]
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;EPUAKHAW0133&apos;, ip: &apos;10.23.11.59&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: net.thucydides.core.webdriver.WebDriverFacade</failure></step>

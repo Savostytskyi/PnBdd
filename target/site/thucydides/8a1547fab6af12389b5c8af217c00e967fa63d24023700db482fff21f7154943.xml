@@ -1,0 +1,51 @@
+<acceptance-test-run title="Check the filter by name of the manufacturer" name="Check the filter by name of the manufacturer" steps="6" successful="1" failures="0" errors="1" skipped="4" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="33117" timestamp="2015-10-29T13:47:31.419+02:00">
+  <user-story id="CheckPnFilters" name="Check pn filters" path="pn/com/ua/stories/consult_dictionary/CheckPnFilters.story"/>
+  <tags>
+    <tag name="Check pn filters" type="story"/>
+    <tag name="Consult dictionary/Check pn filters" type="story"/>
+  </tags>
+  <test-group name="Given site pn.com.ua opened" result="SUCCESS">
+    <screenshots>
+      <screenshot image="32f7bd56383bdd8b2964f89107245b28_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1438">
+      <screenshots>
+        <screenshot image="32f7bd56383bdd8b2964f89107245b28_NONE.png"/>
+        <screenshot image="ea9f3933a2acd1df1ce8c5550c834afa_NONE.png"/>
+      </screenshots>
+      <description>Open pn home page</description>
+    </test-step>
+  </test-group>
+  <test-group name="When I select category ｟&apos;Компьютеры&apos;｠" result="ERROR">
+    <screenshots>
+      <screenshot image="ea9f3933a2acd1df1ce8c5550c834afa_NONE.png"/>
+    </screenshots>
+    <test-step result="ERROR" duration="30758">
+      <screenshots>
+        <screenshot image="ea9f3933a2acd1df1ce8c5550c834afa_NONE.png"/>
+      </screenshots>
+      <description>Select category: &lt;span class=&apos;step-parameter&apos;&gt;&apos;Компьютеры&apos;&lt;/span&gt;</description>
+      <error>Timed out after 30 seconds waiting for presence of element located by: By.selector: //a[text()=&apos;&apos;Компьютеры&apos;&apos;]
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;EPUAKHAW0133&apos;, ip: &apos;10.23.11.59&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: net.thucydides.core.webdriver.WebDriverFacade</error>
+      <exception>org.openqa.selenium.TimeoutException:Timed out after 30 seconds waiting for presence of element located by: By.selector: //a[text()=&apos;&apos;Компьютеры&apos;&apos;]
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;EPUAKHAW0133&apos;, ip: &apos;10.23.11.59&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: net.thucydides.core.webdriver.WebDriverFacade&#xd;
+[pn.com.ua.pages.PnHomePage.selectCategory(PnHomePage.java:31), pn.com.ua.steps.FiltersSteps.selectCategory(FiltersSteps.java:31), pn.com.ua.jbehave.CheckPnFilters.whenISelectSomeCategory(CheckPnFilters.java:24)]</exception>
+    </test-step>
+  </test-group>
+  <test-step result="SKIPPED" duration="23">
+    <description>And I select subcategory {&apos;Мониторы&apos;}</description>
+  </test-step>
+  <test-step result="SKIPPED" duration="28">
+    <description>And I select manufacturer {&apos;Acer&apos;}</description>
+  </test-step>
+  <test-step result="SKIPPED" duration="24">
+    <description>Then search result amount is equal to number beside manufacturer</description>
+  </test-step>
+  <test-step result="SKIPPED" duration="19">
+    <description>And search result names start with selected manufacturer {&apos;Acer&apos;}</description>
+  </test-step>
+</acceptance-test-run>

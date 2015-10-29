@@ -1,0 +1,62 @@
+<acceptance-test-run title="Check the filter by price" name="Check the filter by price" steps="6" successful="1" failures="0" errors="1" skipped="4" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="42503" timestamp="2015-10-29T13:46:48.731+02:00">
+  <user-story id="CheckPnFilters" name="Check pn filters" path="pn/com/ua/stories/consult_dictionary/CheckPnFilters.story"/>
+  <tags>
+    <tag name="Check pn filters" type="story"/>
+    <tag name="Consult dictionary/Check pn filters" type="story"/>
+  </tags>
+  <test-group name="Given site pn.com.ua opened" result="SUCCESS">
+    <screenshots>
+      <screenshot image="c274711505bd76c32368b9c43a2732f8_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="8623">
+      <screenshots>
+        <screenshot image="c274711505bd76c32368b9c43a2732f8_NONE.png"/>
+      </screenshots>
+      <description>Open pn home page</description>
+    </test-step>
+  </test-group>
+  <test-group name="When I select category ｟&apos;Компьютеры&apos;｠" result="ERROR">
+    <screenshots>
+      <screenshot image="c274711505bd76c32368b9c43a2732f8_NONE.png"/>
+    </screenshots>
+    <test-step result="ERROR" duration="31202">
+      <screenshots>
+        <screenshot image="32f7bd56383bdd8b2964f89107245b28_NONE.png"/>
+      </screenshots>
+      <description>Select category: &lt;span class=&apos;step-parameter&apos;&gt;&apos;Компьютеры&apos;&lt;/span&gt;</description>
+      <error>Timed out after 30 seconds waiting for presence of element located by: By.selector: //a[text()=&apos;&apos;Компьютеры&apos;&apos;]
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;EPUAKHAW0133&apos;, ip: &apos;10.23.11.59&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: net.thucydides.core.webdriver.WebDriverFacade</error>
+      <exception>org.openqa.selenium.TimeoutException:Timed out after 30 seconds waiting for presence of element located by: By.selector: //a[text()=&apos;&apos;Компьютеры&apos;&apos;]
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;EPUAKHAW0133&apos;, ip: &apos;10.23.11.59&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: net.thucydides.core.webdriver.WebDriverFacade&#xd;
+[pn.com.ua.pages.PnHomePage.selectCategory(PnHomePage.java:31), pn.com.ua.steps.FiltersSteps.selectCategory(FiltersSteps.java:31), pn.com.ua.jbehave.CheckPnFilters.whenISelectSomeCategory(CheckPnFilters.java:24)]</exception>
+    </test-step>
+  </test-group>
+  <test-step result="SKIPPED" duration="191">
+    <screenshots>
+      <screenshot image="32f7bd56383bdd8b2964f89107245b28_NONE.png"/>
+    </screenshots>
+    <description>And I select subcategory {&apos;Мониторы&apos;}</description>
+  </test-step>
+  <test-step result="SKIPPED" duration="184">
+    <screenshots>
+      <screenshot image="32f7bd56383bdd8b2964f89107245b28_NONE.png"/>
+    </screenshots>
+    <description>And I select minimal price {&apos;6000&apos;}</description>
+  </test-step>
+  <test-step result="SKIPPED" duration="194">
+    <screenshots>
+      <screenshot image="32f7bd56383bdd8b2964f89107245b28_NONE.png"/>
+    </screenshots>
+    <description>And I select maximal price {&apos;7000&apos;}</description>
+  </test-step>
+  <test-step result="SKIPPED" duration="190">
+    <screenshots>
+      <screenshot image="32f7bd56383bdd8b2964f89107245b28_NONE.png"/>
+    </screenshots>
+    <description>Then search result prices is between &apos;6000&apos; and &apos;7000&apos;</description>
+  </test-step>
+</acceptance-test-run>

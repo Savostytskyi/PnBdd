@@ -1,0 +1,51 @@
+<xref>
+  <whenMade>1446119288070</whenMade>
+  <createdBy>JBehave</createdBy>
+  <metaFilter>-ignore</metaFilter>
+  <meta/>
+  <stories>
+    <story>
+      <description></description>
+      <narrative></narrative>
+      <name>CheckPnFilters.story</name>
+      <path>pn/com/ua/stories/consult_dictionary/CheckPnFilters.story</path>
+      <html>pn.com.ua.stories.consult_dictionary.CheckPnFilters.html</html>
+      <meta></meta>
+      <scenarios>Scenario:Check the filter by price
+Given site pn.com.ua opened
+When I select category &apos;Компьютеры&apos;
+And I select subcategory &apos;Мониторы&apos;
+And I select minimal price &apos;6000&apos;
+And I select maximal price &apos;7000&apos;
+Then search result prices is between &apos;6000&apos; and &apos;7000&apos;
+
+
+Scenario:Check the filter by name of the manufacturer
+Given site pn.com.ua opened
+When I select category &apos;Компьютеры&apos;
+And I select subcategory &apos;Мониторы&apos;
+And I select manufacturer &apos;Acer&apos;
+Then search result amount is equal to number beside manufacturer
+And search result names start with selected manufacturer &apos;Acer&apos;
+
+
+Scenario:Check the product name search
+Given site pn.com.ua opened
+When I select category &apos;Компьютеры&apos;
+And I select subcategory &apos;Мониторы&apos;
+And I sort products by price
+And I choose the first product in result
+And I type product name to search
+Then search result amount equals to 1
+And search result name is equal to product name
+
+
+</scenarios>
+      <passed>false</passed>
+      <pending>false</pending>
+      <started>1446119208659</started>
+      <duration>77085</duration>
+    </story>
+  </stories>
+  <stepMatches/>
+</xref>

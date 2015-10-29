@@ -1,0 +1,7 @@
+#surefire
+#Thu Oct 29 13:46:46 EET 2015
+user.dir=D\:\\Projects\\bdd_pn_cdp
+webdriver.driver=iexplorer
+webdriver.remote.url=http\://localhost\:4445/wd/hub
+localRepository=C\:\\Users\\anton_savostytskyi\\.m2\\repository
+basedir=D\:\\Projects\\bdd_pn_cdp
