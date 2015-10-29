@@ -21,7 +21,8 @@ public class PnGoodsPage extends PageObject {
   public static final By RESULT_GOODS_COUNT = By.xpath("//div[@class='total']/b");
   public static final By RESULT_NAMES = By.xpath("//div[@class='name']/a");
   public static final By SORT_BY_PRICE_LINK = By.xpath("//a[contains(@href,'sort=price')]");
-
+  public static final String PRODUCT_COUNT = "//a[text()='%s']/following-sibling::i[1]";
+  public static final String SELECT_MANUFACTURER = "//a[contains(@href, '?fo') and text()='%s']";
 
   public void selectMinimumPrice(String price){
     find(By.xpath(String.format(MIN_PRICE, price))).click();
@@ -37,10 +38,10 @@ public class PnGoodsPage extends PageObject {
   }
 
   public int selectProducer(String producer){
-    String amount = find(By.xpath("//a[text()='" + producer + "']/following-sibling::i[1]")).getText();
+    String amount = find(By.xpath(String.format(PRODUCT_COUNT, producer))).getText();
     amount = amount.replaceAll("[()]", "").replace(" ","");
     int productNumber = Integer.valueOf(amount);
-    find(By.xpath("//a[contains(@href, '?fo') and text()='"+producer+"']")).click();
+    find(By.xpath(String.format(SELECT_MANUFACTURER, producer))).click();
     return productNumber;
   }
 
