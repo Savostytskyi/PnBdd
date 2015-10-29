@@ -31,7 +31,7 @@ public class CheckPnFilters {
 
   @When("I select minimal price $price")
   public void whenISelectMinimalPrice(String price) {
-    filtersSteps.selectMaximalPriceFilter(price);
+    filtersSteps.selectMinimalPriceFilter(price);
   }
 
   @When("I select maximal price $price")

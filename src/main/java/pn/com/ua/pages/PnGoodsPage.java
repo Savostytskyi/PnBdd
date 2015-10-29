@@ -15,10 +15,21 @@ public class PnGoodsPage extends PageObject {
 
   public static final String FILTERS = "//div[@class='is_empty_items']//a";
   public static final String FILTER_BY_VALUE = FILTERS + "[text()='%s']";
+  public static final String MIN_PRICE = "//a[contains(@href,'fp1=%s')]";
+  public static final String MAX_PRICE = "//a[contains(@href,'fp2=%s')]";
   public static final By GOODS_PRICES = By.xpath("//div[@class='price']/strong");
   public static final By RESULT_GOODS_COUNT = By.xpath("//div[@class='total']/b");
   public static final By RESULT_NAMES = By.xpath("//div[@class='name']/a");
   public static final By SORT_BY_PRICE_LINK = By.xpath("//a[contains(@href,'sort=price')]");
+
+
+  public void selectMinimumPrice(String price){
+    find(By.xpath(String.format(MIN_PRICE, price))).click();
+  }
+
+  public void selectMaximumPrice(String price){
+    find(By.xpath(String.format(MAX_PRICE, price))).click();
+  }
 
   public void selectFilter (String filterValue) {
     waitForPresenceOf(String.format(FILTER_BY_VALUE, filterValue));
@@ -35,7 +46,7 @@ public class PnGoodsPage extends PageObject {
   }
 
   public int getResultCount(){
-    return Integer.parseInt(find(RESULT_GOODS_COUNT).getText());
+    return Integer.valueOf(find(RESULT_GOODS_COUNT).getText());
   }
 
   public List<String> getResultsNames(){

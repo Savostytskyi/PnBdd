@@ -37,13 +37,13 @@ public class FiltersSteps extends ScenarioSteps {
   }
 
   @Step
-  public void selectMinimalPriceFilter(String filterValue) {
-    pnGoodsPage.selectFilter(filterValue);
+  public void selectMinimalPriceFilter(String price) {
+    pnGoodsPage.selectMinimumPrice(price);
   }
 
   @Step
-  public void selectMaximalPriceFilter(String filterValue) {
-    pnGoodsPage.selectFilter(filterValue);
+  public void selectMaximalPriceFilter(String price) {
+    pnGoodsPage.selectMaximumPrice(price);
   }
 
   @Step
